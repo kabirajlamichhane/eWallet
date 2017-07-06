@@ -1,0 +1,25 @@
+*
+	{
+		margin : 0px;
+		padding: 0px;
+	}
+#editsite-name
+	{
+		width: 399px;
+		margin-left: 296px;
+		margin-top: 10px;
+	}
+#namechange
+	{
+		margin-left: 608px;
+	}	
+#logochange
+	{
+		margin-left: 608px;
+	}	
+#update-url
+	{
+		width: 399px;
+		margin-left: 296px;
+		margin-top: 10px;
+	}	

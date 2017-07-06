@@ -1,0 +1,21 @@
+*
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+#category-name
+	{
+		width: 700px;
+		margin-left: 300px;
+		padding-top: 20px;
+		border: 2px solid #dddddd;
+		border-radius: 7px;
+	}
+#edit-category
+	{
+		width: 700px;
+		margin-left: 300px;
+		padding-top: 20px;
+		border: 2px solid #dddddd;
+		border-radius: 7px;
+	}	

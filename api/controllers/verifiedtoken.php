@@ -22,10 +22,9 @@
 	$result =mysqli_query($conn,$sql);
 	 if(mysqli_num_rows($result) > 0)
 	{
-		// echo "ok";
 		$sql ="UPDATE user set password ='$newpassword' WHERE email ='$email'";
 		$result=mysqli_query($conn,$sql);
-		// print_r($result);
+
 		if($result)
 		{
 			// header('location:dashboard.php');

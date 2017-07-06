@@ -1,4 +1,19 @@
 RewriteEngine On
 RewriteBase /eWallet
+
+RewriteCond %{REQUEST_URI} category [NC]
+RewriteRule ^api/([0-9a-zA-Z]+)/([0-9a-zA-Z]+)*$ api/controllers/categories-controller.php?route=$1&param1=$2 [NC,L]
+
+RewriteCond %{REQUEST_URI} category [NC]
+RewriteRule ^api/([0-9a-zA-Z]+)/([0-9a-zA-Z]+)/([0-9a-zA-Z]+)*$ api/controllers/categories-controller.php?route=$1&param1=$2&param2=$3 [NC,L]
+
+RewriteCond %{REQUEST_URI} category [NC]
+RewriteRule ^api/([0-9a-zA-Z]+)/([0-9a-zA-Z]+)/([0-9a-zA-Z]+)/([0-9a-zA-Z]+)*$ api/controllers/categories-controller.php?route=$1&param1=$2&param2=$3&param3=$4 [NC,L]
+
+RewriteCond %{REQUEST_URI} setting [NC]
+RewriteRule ^api/([0-9a-zA-Z]+)*$  api/controllers/setting-controller.php?route=$1  [NC,L]
+
+
 RewriteRule ^api/([0-9a-zA-Z]+)$ api/controllers/users-controller.php?route=$1 [NC,L]
 RewriteRule ^api/([0-9a-zA-Z]+)/([0-9a-zA-Z]+)$ api/controllers/users-controller.php?route=$1&param1=$2 [NC,L]
+RewriteRule ^api/([0-9a-zA-Z]+)/([0-9a-zA-Z]+)/([0-9a-zA-Z]+)$ api/controllers/categories-controller.php?route=$1&param1=$2&param2=$3[NC,L]
